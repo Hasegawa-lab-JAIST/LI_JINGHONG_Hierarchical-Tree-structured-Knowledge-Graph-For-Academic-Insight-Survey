@@ -1,12 +1,12 @@
 # Hierarchical Tree-structured Knowledge Graph:Gain an Insight View  for Specific research Topic
 
 
-# 0. About this - 前書き 
+# 0. About this 
 ## Link of our preprint
 ## Link of our dataset 
 ## Declaration
 
-# 1. Content of code - 目次
+# 1. Content of code 
 ## Data_process.ipynb 
 ## Insight_process.ipynb
 ## Con_vis.ipynb
@@ -15,22 +15,22 @@
 
 
 
-# 2. Environment - 環境構築 
+# 2. Environment
 ```python
 pip install -r requirements.txt
 ```
 
-# 3. Preparation - 事前準備
+# 3. Preparation
 
-# 4. Phase1: Data processing - ステップI : データ処理 
+# 4. Phase1: Data processing
 
-# 5. Phase2: Insight Sentence Extraction - 洞見文章抽出
+# 5. Phase2: Insight Sentence Extraction
 
-# 6. Phase3-4: Hierarchical Tree Construction & Visualization - 階層ツリーの構築や可視化
+# 6. Phase3-4: Hierarchical Tree Construction & Visualization
 
-# 7. Example - 例示
+# 7. Example
 
-# Acknowledgements - 謝辞
+# Acknowledgements
 
 # Notes 
 
