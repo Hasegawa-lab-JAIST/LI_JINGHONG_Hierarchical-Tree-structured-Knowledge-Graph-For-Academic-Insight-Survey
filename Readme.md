@@ -15,7 +15,7 @@ arXiv preprint arXiv:2402.04854.
 ```
 	
 ## Declaration 
-**This article of this project has been accepted by INISTA 2024, and future citations should be based on the official version.**
+**The article of this project has been accepted by INISTA 2024, and future citations should be based on the official version.**
 
 # 1. Content of code 
 ## Data_process.ipynb 
