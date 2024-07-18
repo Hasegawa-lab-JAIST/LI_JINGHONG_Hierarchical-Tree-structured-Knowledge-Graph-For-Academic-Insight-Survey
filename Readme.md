@@ -9,6 +9,7 @@
 
 ## Citation (Current)
 ```
+Li, J., Phan, H., Gu, W., Ota, K., & Hasegawa, S. (2024). 
 Hierarchical Tree-structured Knowledge Graph For Academic Insight Survey. 
 arXiv preprint arXiv:2402.04854.
 ```
