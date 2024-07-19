@@ -1,4 +1,4 @@
-# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View for Specific research Topic
+# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View for Specific research Topic (On building, plan to finish uploading the notebook in July,  pyfile and app in Sep)
 
 
 # 0. About this 
