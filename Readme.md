@@ -1,7 +1,13 @@
-# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View  for Specific research Topic
+# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View for Specific research Topic
 
 
 # 0. About this 
+## Target
+- 1. Create a knowledge interface for insights survey assistants from multiple academic papers on a specific research topic. 
+- 2. From the origin (root) of the research task, expand the citation inheritance and relevance associations. 
+- 3. Explore the relevance chain within similar research tasks to highlight key research points.
+
+## Resources
 - **Link of our preprint :** 
 	- https://arxiv.org/abs/2402.04854
 - **Link of our dataset :**
@@ -17,13 +23,24 @@ arXiv preprint arXiv:2402.04854.
 ## Declaration 
 **The article of this project has been accepted by INISTA 2024, and future citations should be based on the official version.**
 
-# 1. Content of code 
-## Data_process.ipynb 
-## Insight_process.ipynb
-## Con_vis.ipynb
+# 1. Content 
+## Overview
+
+## Text-Processing.ipynb 
+- Perform section & sentence segmentation on the total dataset of ‘HotpotQA’ topic to create the corresponding insight sentence dataset. Experts then assign insight labels to this dataset.
+
+## Cite-Net-Construction.ipynb
+- The cite-net, established based on the citation relationships among papers in the Hotpotqa topic, is presented in Cite_net_total.html as the overall network. The sub-nets within it will be extracted to form the basic prototype of the tree-structured knowledge graph.
+
+## Freq-dist.ipynb
+- This document displays the frequent words in the insight section (conclusion, discussion, limitation).
+
+## Insight-Sentence-Classification.ipynb
+- This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
+
+## Tree_Con_vis.ipynb
 ## Project
 ## App
-
 
 
 # 2. Environment
@@ -31,6 +48,7 @@ arXiv preprint arXiv:2402.04854.
 ```
 
 # 3. Preparation
+- Extract content of papers containing the keyword 'HotpotQA' from the S2ORC dataset.
 
 # 4. Phase1: Data processing
 
