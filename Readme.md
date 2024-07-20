@@ -40,7 +40,10 @@ arXiv preprint arXiv:2402.04854.
 ## Insight-Sentence-Classification.ipynb
 - This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
 
-## Tree_Con_vis.ipynb
+## Similarity-Calculation.ipynb
+- Calculate the similarity of the elements of the insight section & relevance chain (‘Issue finding’ → ‘Issue Resolved’) in the paper-network.
+
+## Tree-Con-vis.ipynb
 
 ## Project
 ## App
@@ -53,13 +56,9 @@ arXiv preprint arXiv:2402.04854.
 # 3. Preparation
 - Extract content of papers containing the keyword 'HotpotQA' from the S2ORC dataset.
 
-# 4. Phase1: Data processing
 
-# 5. Phase2: Insight Sentence Extraction
+# 4. Example
 
-# 6. Phase3-4: Hierarchical Tree Construction & Visualization
-
-# 7. Example
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
