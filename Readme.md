@@ -9,9 +9,11 @@
 
 ## Resources
 - **Link of our preprint :** 
-	- https://arxiv.org/abs/2402.04854
+	- [Arxiv](https://arxiv.org/abs/2402.04854)
+	- [ResearchGate](https://www.researchgate.net/publication/378339313_Hierarchical_Tree-structured_Knowledge_Graph_For_Academic_Insight_Survey)
+
 - **Link of our dataset :**
-	- https://doi.org/10.34740/KAGGLE/DS/4330260
+	- [https://doi.org/10.34740/KAGGLE/DS/4330260](https://doi.org/10.34740/KAGGLE/DS/4330260)
 
 ## Citation (Current)
 ```
@@ -21,7 +23,7 @@ arXiv preprint arXiv:2402.04854.
 ```
 	
 ## Declaration 
-**The article of this project has been accepted by INISTA 2024, and future citations should be based on the official version.**
+**The article of this project has been accepted by "THE 18TH INTERNATIONAL CONFERENCE ON INNOVATIONS IN INTELLIGENT SYSTEMS AND APPLICATIONS (INISTA 2024)", and future citations should be based on the official version.**
 
 # 1. Content 
 ## Overview
@@ -39,6 +41,7 @@ arXiv preprint arXiv:2402.04854.
 - This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
 
 ## Tree_Con_vis.ipynb
+
 ## Project
 ## App
 
