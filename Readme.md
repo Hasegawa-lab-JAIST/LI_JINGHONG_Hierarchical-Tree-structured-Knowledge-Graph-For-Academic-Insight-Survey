@@ -28,22 +28,29 @@ arXiv preprint arXiv:2402.04854.
 # 1. Content 
 ## Overview
 
-## Text-Processing.ipynb 
+## Phase1 - Text-Processing.ipynb 
 - Perform section & sentence segmentation on the total dataset of ‘HotpotQA’ topic to create the corresponding insight sentence dataset. Experts then assign insight labels to this dataset.
 
-## Cite-Net-Construction.ipynb
+## Phase1-I - For Inheritance tree: Cite-Net-Construction.ipynb
 - The cite-net, established based on the citation relationships among papers in the Hotpotqa topic, is presented in Cite_net_total.html as the overall network. The sub-nets within it will be extracted to form the basic prototype of the tree-structured knowledge graph.
 
-## Freq-dist.ipynb
+## Appendix - Freq-dist.ipynb
 - This document displays the frequent words in the insight section (conclusion, discussion, limitation).
 
-## Insight-Sentence-Classification.ipynb
+## Phase2 - Insight-Sentence-Classification.ipynb
 - This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
 
-## Similarity-Calculation.ipynb
+## Phase3&4 - Hierarchical-tree-building-vis.ipynb
+- Code for building & visualizing the graph
+
+### Phase3 - Similarity-Calculation.ipynb
 - Calculate the similarity of the elements of the insight section & relevance chain (‘Issue finding’ → ‘Issue Resolved’) in the paper-network.
 
-## Tree-Con-vis.ipynb
+
+### Phase3,4-I - For Inheritance tree: Hierarchical-inheritance-tree-building&vis.ipynb
+
+### Phase3,4-R - For Relevance tree: Hierarchical-Relevance-tree-building.ipynb
+
 
 ## Project
 ## App
@@ -58,7 +65,8 @@ arXiv preprint arXiv:2402.04854.
 
 
 # 4. Example
-
+- Inheritance tree: 
+- Relevance tree:
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
