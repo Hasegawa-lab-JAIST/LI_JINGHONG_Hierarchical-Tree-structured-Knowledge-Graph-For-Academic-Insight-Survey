@@ -27,6 +27,7 @@ arXiv preprint arXiv:2402.04854.
 
 # 1. Content 
 ## Overview
+<img width="1868" alt="Figure1-2" src="https://github.com/user-attachments/assets/8cb8914f-925b-4edc-a7ca-22c8669c7315">
 
 ## Phase1 - Text-Processing.ipynb 
 - Perform section & sentence segmentation on the total dataset of ‘HotpotQA’ topic ([Hotpotqa_paper_content.csv](https://doi.org/10.34740/KAGGLE/DS/4330260)) to create the corresponding insight sentence dataset. Experts then assign insight labels('Issue Resolved', 'Neutral', and 'Issue Finding' ) to this dataset.
