@@ -29,13 +29,11 @@ arXiv preprint arXiv:2402.04854.
 ## Overview
 
 ## Phase1 - Text-Processing.ipynb 
-- Perform section & sentence segmentation on the total dataset of ‘HotpotQA’ topic to create the corresponding insight sentence dataset. Experts then assign insight labels to this dataset.
+- Perform section & sentence segmentation on the total dataset of ‘HotpotQA’ topic ([Hotpotqa_paper_content.csv](https://doi.org/10.34740/KAGGLE/DS/4330260)) to create the corresponding insight sentence dataset. Experts then assign insight labels('Issue Resolved', 'Neutral', and 'Issue Finding' ) to this dataset.
 
-## Phase1-I - For Inheritance tree: Cite-Net-Construction.ipynb
+## Phase1* - Cite-Net-Construction.ipynb
 - The cite-net, established based on the citation relationships among papers in the Hotpotqa topic, is presented in Cite_net_total.html as the overall network. The sub-nets within it will be extracted to form the basic prototype of the tree-structured knowledge graph.
 
-## Appendix - Freq-dist.ipynb
-- This document displays the frequent words in the insight section (conclusion, discussion, limitation).
 
 ## Phase2 - Insight-Sentence-Classification.ipynb
 - This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
@@ -51,6 +49,8 @@ arXiv preprint arXiv:2402.04854.
 
 ### Phase3,4-R - For Relevance tree: Hierarchical-Relevance-tree-building.ipynb
 
+## Appendix - Freq-dis.ipynb
+- This document displays the frequent words in the insight section (conclusion, discussion, limitation).
 
 ## Project
 ## App
@@ -69,6 +69,11 @@ arXiv preprint arXiv:2402.04854.
 - [Inheritance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 - [Relevance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
+
+# To Do
+- Prompt enginnering for abstractive summarization.
+- User Interface development.
+- Adjust the appearance of the graph.
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
