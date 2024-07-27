@@ -62,6 +62,7 @@ arXiv preprint arXiv:2402.04854.
 
 # 3. Preparation
 - Extract content of papers containing the keyword 'HotpotQA' from the S2ORC dataset.
+- The data of content of papers is in the file `Hotpotqa_paper_content.csv` in [https://doi.org/10.34740/KAGGLE/DS/4330260](https://doi.org/10.34740/KAGGLE/DS/4330260)
 
 
 # 4. Example
