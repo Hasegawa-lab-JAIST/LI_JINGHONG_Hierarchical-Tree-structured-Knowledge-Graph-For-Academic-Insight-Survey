@@ -65,8 +65,9 @@ arXiv preprint arXiv:2402.04854.
 
 
 # 4. Example
-- Inheritance tree: 
-- Relevance tree:
+- [Inheritance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
+
+- [Relevance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
