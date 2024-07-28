@@ -54,27 +54,28 @@ arXiv preprint arXiv:2402.04854.
 - This document displays the frequent words in the insight section (conclusion, discussion, limitation).
 
 ## Project
++ [ ] To do
+
 ## App
++ [ ] To do
 
 
-# 2. Environment
-```python
-```
-
-# 3. Preparation
+# 2. Preparation
 - Extract content of papers containing the keyword 'HotpotQA' from the S2ORC dataset.
 - The data of content of papers is in the file `Hotpotqa_paper_content.csv` in [https://doi.org/10.34740/KAGGLE/DS/4330260](https://doi.org/10.34740/KAGGLE/DS/4330260)
 
 
-# 4. Example
+# 3. Example
 - [Inheritance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 - [Relevance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
+# 4. User Interface
+
 # To Do
-- Prompt enginnering for abstractive summarization.
-- User Interface development.
-- Adjust the appearance of the graph.
++ [ ] Prompt enginnering for abstractive summarization.
++ [ ] User Interface development.
++ [ ] Adjust the appearance of the graph.
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
