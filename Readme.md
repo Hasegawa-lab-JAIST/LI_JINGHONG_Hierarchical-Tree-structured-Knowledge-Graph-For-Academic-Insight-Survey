@@ -68,8 +68,8 @@ Visualization
 - [Relevance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 # 4. User Interface
-[ ] Implementation of screen transitions and button functions 
-[ ] GUI building via pyqt
++ [ ] Implementation of screen transitions and button functions 
++ [ ] GUI building via pyqt
 
 # To Do
 + [ ] Prompt enginnering for abstractive summarization.
