@@ -40,18 +40,15 @@ arXiv preprint arXiv:2402.04854.
 - This document implements a classifier for Insight sentences. All insight sentences will be classified into 'Issue Resolved', 'Neutral', and 'Issue Finding' categories using machine learning methods. The classification results will be used to establish the relevance chain in the graph.
 
 ## Phase3&4 - Hierarchical-tree-building-vis.ipynb
-- Code for building & visualizing the graph
+- Code for tree-building algorithm & Graph
+Visualization 
+- To maintain consistency of input and output, the code for cite-net construction and similarity calculation has also been added.
 
-### Phase3 - Similarity-Calculation.ipynb
-- Calculate the similarity of the elements of the insight section & relevance chain (‘Issue finding’ → ‘Issue Resolved’) in the paper-network.
-
-
-### Phase3,4-I - For Inheritance tree: Hierarchical-inheritance-tree-building&vis.ipynb
-
-### Phase3,4-R - For Relevance tree: Hierarchical-Relevance-tree-building.ipynb
-
-## Appendix - Freq-dis.ipynb
+## Appendix.1 - Freq-dis.ipynb
 - This document displays the frequent words in the insight section (conclusion, discussion, limitation).
+
+## Appendix.2 - Similarity-Calculation.ipynb
+- Calculate the similarity of the elements of the insight section & relevance chain (‘Issue finding’ → ‘Issue Resolved’) in the paper-network.
 
 ## Project
 + [ ] To do
@@ -65,17 +62,17 @@ arXiv preprint arXiv:2402.04854.
 - The data of content of papers is in the file `Hotpotqa_paper_content.csv` in [https://doi.org/10.34740/KAGGLE/DS/4330260](https://doi.org/10.34740/KAGGLE/DS/4330260)
 
 
-# 3. Example
-- [Inheritance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
+# 3. Example(HTML) [Inheritance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 - [Relevance tree](https://github.com/Hasegawa-lab-JAIST/LI_JINGHONG_Hierarchical-Tree-structured-Knowledge-Graph-For-Academic-Insight-Survey/blob/main/Output/Inheritance_tree.html)
 
 # 4. User Interface
+[ ] Implementation of screen transitions and button functions 
+[ ] GUI building via pyqt
 
 # To Do
 + [ ] Prompt enginnering for abstractive summarization.
 + [ ] User Interface development.
-+ [ ] Adjust the appearance of the graph.
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
