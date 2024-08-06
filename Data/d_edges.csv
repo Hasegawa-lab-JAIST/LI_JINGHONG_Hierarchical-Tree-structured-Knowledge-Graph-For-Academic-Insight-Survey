@@ -1,4 +1,4 @@
-,sourceNodeId,targetNodeId,cite_position,relationshipType,flag
+,sourceNodeId,targetNodeId,cite_info,relationshipType,flag
 0,248665596,220302524,{220302524: '[30]'},cites,3
 1,264490922,123758373,"{123758373: 'Chen and Durrett, 2019;', 246652372: 'Bang et al., 2023;', 174801764: 'Min et al., 2019;', 221749191: 'Trivedi et al., 2020', 248227734: 'Xie et al., 2022', 52822214: 'Yang et al., 2018'}",cites,4
 2,264490922,246652372,"{123758373: 'Chen and Durrett, 2019;', 246652372: 'Bang et al., 2023;', 174801764: 'Min et al., 2019;', 221749191: 'Trivedi et al., 2020', 248227734: 'Xie et al., 2022', 52822214: 'Yang et al., 2018'}",cites,4
