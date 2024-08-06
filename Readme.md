@@ -71,9 +71,6 @@ Visualization
 + [ ] Implementation of screen transitions and button functions 
 + [ ] GUI building via pyqt
 
-# To Do
-+ [ ] Prompt enginnering for abstractive summarization.
-+ [ ] User Interface development.
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
