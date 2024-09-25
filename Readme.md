@@ -1,4 +1,4 @@
-# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View for Specific research Topic (On building, plan to finish uploading the notebook in July,  pyfile and app in Sep)
+# Hierarchical Tree-structured Knowledge Graph:Gain an Insight View for Specific research Topic (On building, plan to finish uploading the notebook in July,  pyfile and app in Oct)
 
 
 # 0. About this 
@@ -8,22 +8,19 @@
 - 3. Explore the relevance chain within similar research tasks to highlight key research points.
 
 ## Resources
-- **Link of our preprint :** 
-	- [Arxiv](https://arxiv.org/abs/2402.04854)
-	- [ResearchGate](https://www.researchgate.net/publication/378339313_Hierarchical_Tree-structured_Knowledge_Graph_For_Academic_Insight_Survey)
+- **Link of our paper :**
+  	- [https://ieeexplore.ieee.org/document/10683856](https://ieeexplore.ieee.org/document/10683856)
 
 - **Link of our dataset :**
 	- [https://doi.org/10.34740/KAGGLE/DS/4330260](https://doi.org/10.34740/KAGGLE/DS/4330260)
 
-## Citation (Current)
-```
-Li, J., Phan, H., Gu, W., Ota, K., & Hasegawa, S. (2024). 
-Hierarchical Tree-structured Knowledge Graph For Academic Insight Survey. 
-arXiv preprint arXiv:2402.04854.
-```
-	
 ## Declaration 
-**The article of this project has been accepted by "THE 18TH INTERNATIONAL CONFERENCE ON INNOVATIONS IN INTELLIGENT SYSTEMS AND APPLICATIONS (INISTA 2024)", and future citations should be based on the official version.**
+**The article of this project has been published by "THE 18TH INTERNATIONAL CONFERENCE ON INNOVATIONS IN INTELLIGENT SYSTEMS AND APPLICATIONS (INISTA 2024)."**
+
+## Citation 
+```
+J. Li, P. Huy, W. Gu, K. Ota and S. Hasegawa, "Hierarchical Tree-structured Knowledge Graph For Academic Insight Survey," 2024 International Conference on INnovations in Intelligent SysTems and Applications (INISTA), Craiova, Romania, 2024, pp. 1-7, doi: 10.1109/INISTA62901.2024.10683856.
+```
 
 # 1. Content 
 ## Overview
