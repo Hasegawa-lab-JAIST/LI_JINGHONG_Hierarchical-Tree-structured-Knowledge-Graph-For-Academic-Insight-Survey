@@ -66,7 +66,8 @@ Visualization
 
 # 4. User Interface
 - Current
-<img width="950" alt="スクリーンショット 2024-09-26 20 10 45" src="https://github.com/user-attachments/assets/76a8f164-4b98-4ab7-98a3-1be4c2b30f9e">
+<img width="946" alt="スクリーンショット 2024-09-26 20 22 27" src="https://github.com/user-attachments/assets/4fdb4647-6166-46da-a9af-e3c3d9012480">
+
 
 + [ ] To do 1: Improve layout of components
 + [ ] To do 2: More concise summary via prompt engineering
