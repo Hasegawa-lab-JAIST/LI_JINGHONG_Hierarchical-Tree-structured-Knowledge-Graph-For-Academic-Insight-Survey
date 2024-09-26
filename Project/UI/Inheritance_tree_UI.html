@@ -333,5 +333,210 @@ function highlightFilter(filter) {
               }
               drawGraph();
         </script>
-    </body>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .network-container {
+            position: relative;
+            border: 10px solid transparent;
+            border-radius: 15px;
+            padding: 10px;
+            background-image: linear-gradient(white, white), linear-gradient(to right, #FF5733, #FFC300, #DAF7A6, #33FF57, #3375FF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        #network {
+            border-radius: 10px;
+        }
+
+        #searchBar {
+            width: 300px; 
+            margin-bottom: 10px;
+            border: 2px solid #97C2FC;
+            border-radius: 5px;
+            padding: 8px 30px 8px 40px;
+            font-size: 16px;
+            background-image: url('https://img.icons8.com/material-outlined/24/97C2FC/search.png');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 20px 20px;
+        }
+
+        textarea {
+            margin-bottom: 10px;
+            font-size: 18px; 
+            font-weight: bold; 
+            color: darkblue; 
+            border: 2px solid #97C2FC;
+            border-radius: 5px;
+            padding: 8px;
+            resize: none;
+        }
+
+        #confirmButton {
+            width: 150px; 
+            padding: 10px;
+            background-color: #97C2FC;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+
+        #confirmButton:hover {
+            background-color: #6ea2d8;
+        }
+        
+        .inheritance-title {
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            font-size: 30px;
+            margin: 0 10px;
+            align-self: center;
+        }
+        
+        #clearSearchButton {
+            width: 50px; 
+            height: 30px; 
+            margin-left: 5px; 
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        #clearSearchButton:hover {
+            background-color: #d14b2b;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <div class="network-container">
+        <div id="network"></div>
+    </div>
+    
+    <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: stretch;">
+        <div class="flex-container">
+            <input type="text" id="searchBar" placeholder="Enter the keyword">
+            <button id="clearSearchButton">Clear</button>
+            <span class="inheritance-title">Inheritance Insight Tree</span>
+            <button id="confirmButton">Confirm selected paper</button>
+        </div>
+        <textarea id="paperTitle" rows="4" readonly>Paper-title: </textarea>
+        <textarea id="issueChain" rows="1" readonly>Issue chain: </textarea>
+        <textarea id="ocOccurrence" rows="1" readonly>Oc-occurrence: </textarea>
+    </div>
+
+    <script type="text/javascript">
+    var enlargedNodes = [];
+    var originalSize = 10;
+    var lastClickedNodeId = null;
+
+    network.on('doubleClick', function(params) {
+        var nodeId = params.nodes[0];
+        if (nodeId) {
+            var nodeName = nodes.get(nodeId).label;
+            var currentText = document.getElementById('paperTitle').value;
+            if (!currentText.includes(nodeName)) {
+                document.getElementById('paperTitle').value = currentText + nodeName + '\n';
+            }
+        }
+    });
+
+    network.on('click', function(params) {
+        var nodeId = params.nodes[0];
+        if (nodeId) {
+            var nodeName = nodes.get(nodeId).label;
+            console.log('Clicked node:', nodeName);
+            if (enlargedNodes.length >= 2) {
+                enlargedNodes.forEach(function(id) {
+                    network.body.data.nodes.update({id: id, size: originalSize, color: "#97C2FC"}); 
+                });
+                enlargedNodes = [];
+                document.getElementById('issueChain').value = 'Issue chain: ';
+                document.getElementById('ocOccurrence').value = 'Oc-occurrence: ';
+            }
+            if (enlargedNodes.includes(nodeId)) {
+                network.body.data.nodes.update({id: nodeId, size: originalSize, color: "#97C2FC"});  
+                enlargedNodes = enlargedNodes.filter(id => id !== nodeId);
+            } else {
+                enlargedNodes.push(nodeId);  
+                network.body.data.nodes.update({id: nodeId, size: originalSize * 3, color: "#FFDD57"});
+                if (enlargedNodes.length === 2) {
+                    var node1 = nodes.get(enlargedNodes[0]);
+                    var node2 = nodes.get(enlargedNodes[1]);
+                    document.getElementById('issueChain').value = 'Issue chain: ' + node1.label + ' and ' + node2.label;
+                    var edge = network.body.data.edges.get({
+                        filter: function(edge) {
+                            return (edge.from === enlargedNodes[0] && edge.to === enlargedNodes[1]) ||
+                                   (edge.from === enlargedNodes[1] && edge.to === enlargedNodes[0]);
+                        }
+                    });
+                    if (edge.length > 0) {
+                        document.getElementById('ocOccurrence').value = 'Oc-occurrence: ' + edge[0].label;
+                    } else {
+                        document.getElementById('ocOccurrence').value = 'Oc-occurrence: No connection';
+                    }
+                }
+            }
+            lastClickedNodeId = nodeId;
+            network.redraw();
+        }
+    });
+
+    network.on('click', function(params) {
+        if (params.nodes.length === 0) {
+            enlargedNodes.forEach(function(id) {
+                network.body.data.nodes.update({id: id, size: originalSize, color: "#97C2FC"});
+            });
+            enlargedNodes = [];
+            document.getElementById('paperTitle').value = 'Paper-title: ';
+            document.getElementById('issueChain').value = 'Issue chain: ';
+            document.getElementById('ocOccurrence').value = 'Oc-occurrence: ';
+        }
+    });
+
+    document.getElementById('searchBar').addEventListener('input', function() {
+        var searchTerm = this.value.toLowerCase();
+        nodes.forEach(function(node) {
+            var display = node.label.toLowerCase().includes(searchTerm);
+            network.body.data.nodes.update({id: node.id, hidden: !display});
+        });
+        network.redraw();
+    });
+
+    document.getElementById('confirmButton').addEventListener('click', function() {
+        var paperTitle = document.getElementById('paperTitle').value;
+        var blob = new Blob([paperTitle], { type: 'text/plain' });
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = 'selected_paper.txt';
+        link.click();
+    });
+    
+    document.getElementById('clearSearchButton').addEventListener('click', function() {
+        document.getElementById('searchBar').value = '';
+        nodes.forEach(function(node) {
+            network.body.data.nodes.update({id: node.id, hidden: false});
+        });
+        network.redraw();
+    });
+    </script>
+</body>
 </html>
