@@ -50,8 +50,6 @@ Visualization
 ## Project
 + [ ] To do
 
-## App
-+ [ ] To do
 
 
 # 2. Preparation
@@ -70,7 +68,6 @@ Visualization
 
 
 + [ ] To do 1: Improve layout of components
-+ [ ] To do 2: More concise summary via prompt engineering
 
 # Acknowledgements
 This work was supported by JSPS KAKENHI Grant Number JP20H04295.
